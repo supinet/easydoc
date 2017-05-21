@@ -1,0 +1,1115 @@
+<!doctype html>
+<html class="app no-js" lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EASYDOC - Sistema de Atendimento Médico Fácil</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="description" content="Sistema de gerenciamento de atendimento fácil para médicos.">
+  <meta name="keywords" content="paciente, gerenciamento, médicos, saúde, atendimento, gestão, hospital">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+  <p class="browsehappy">Você está usando um navegador <strong>desatualizado</strong>. Por favor, <a href="http://browsehappy.com/" target="_blank">atualize seu navegador</a> para melhorar a sua experiência.</p>
+<![endif]-->
+
+  <div id="barra-brasil" style="background: #7f7f7f; height: 20px; padding: 0 0 0 10px; display: block; min-height: 32px;">
+    <ul id="menu-barra-temp" style="list-style: none;">
+      <li style="display: inline; float: left; padding-right: 10px; margin-right: 10px; border-right: 1px solid #ededed;"><a href="http://wwww.dotmaster.com.br" style="font-family: sans,sans-serif; text-decoration: none; color: white;">EASYDOC Sistema Fácil de Atendimento Médico</a></li>
+      <li><a href="http://www.idea4us.com" style="font-family: sans,sans-serif; text-decoration: none; color: white;">saiba mais</a></li>
+    </ul>
+  </div>
+
+  <section class="vbox">
+    <header class="bg-primary header header-md navbar navbar-fixed-top-xs box-shadow">
+      <div class="navbar-header aside-md bg-white">
+        <a class="btn btn-link visible-xs" data-toggle-class="nav-off-screen" data-target="#nav">
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- LOGO -->
+        <a href="painel.html" class="navbar-brand text-center">
+          <figure class="inline m-r-xs">
+            <img src="images/logo.png" alt="EASYDOC">
+          </figure>
+        </a>
+        <!-- LOGO -->
+        <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+        <i class="fa fa-cog"></i>
+      </a>
+      </div>
+      <ul class="nav navbar-nav hidden-xs">
+        <!-- NOME SISTEMA PERFIL USUARIO -->
+        <li>
+          <a href="#"><i class="i i-book"></i>EASYDOC - Perfil Diretor Geral</a>
+        </li>
+        <!-- NOME SISTEMA PERFIL USUARIO -->
+        <!-- LISTA DE SISTEMAS -->
+        <li class="dropdown" data-toggle="tooltip" title="Acesso aos Sistemas">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="i i-grid"></i>
+        </a>
+          <div class="dropdown-menu list-quickaccess aside-lg bg-white on">
+            <div class="row m-l-none m-r-none m-t m-b text-center">
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v active">
+                  <span class="m-b-xs block">
+                    <i class="i i-book i-2x text-primary-lt"></i>
+                  </span>
+                  <small class="text-muted">IMAG</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-users2 i-2x text-danger-lt"></i>
+                  </span>
+                  <small class="text-muted">LAB</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-rating3 i-2x text-success-lt"></i>
+                  </span>
+                  <small class="text-muted">FARM</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-data2 i-2x text-info-lt"></i>
+                  </span>
+                  <small class="text-muted">TELEM</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-map2 i-2x text-muted"></i>
+                  </span>
+                  <small class="text-muted">CIRUG</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-vcard i-2x text-warning-lter"></i>
+                  </span>
+                  <small class="text-muted">CADASTRO</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-stats i-2x text-danger-lter"></i>
+                  </span>
+                  <small class="text-muted">SEGUR</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-layer2 i-2x text-info-lter"></i>
+                  </span>
+                  <small class="text-muted">NEUR</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-chat2 i-2x text-primary-lter"></i>
+                  </span>
+                  <small class="text-muted">TRIAG</small>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="painel.html" class="padder-v">
+                  <span class="m-b-xs block">
+                    <i class="i i-study i-2x text-success-lter"></i>
+                  </span>
+                  <small class="text-muted">URGÊN</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- LISTA DE SISTEMAS -->
+        <!-- LISTA DE PERFIS -->
+        <li class="dropdown" data-toggle="tooltip" title="Seleção de Perfil">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="i i-users3"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="active">
+              <a href="painel.html">Triador</a>
+            </li>
+            <li>
+              <a href="painel.html">Técnico Coleta</a>
+            </li>
+            <li>
+              <a href="painel.html">Cirurgião</a>
+            </li>
+          </ul>
+        </li>
+        <!-- LISTA DE PERFIS -->
+      </ul>
+      <!-- PESQUISAR -->      
+      <form class="navbar-form navbar-left input-m-md m-t m-l-n-xs hidden-xs" action="resultado-pesquisa.html" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-sm bg-white b-white btn-icon"><i class="fa fa-search"></i></button>
+            </span>
+            <input type="search" class="form-control input-sm no-border" placeholder="Buscar no sistema...">
+          </div>
+        </div>
+      </form>
+      <!-- PESQUISAR -->
+      <!-- MANUAL VERSAO LOGOUT -->
+      <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+        <li class="hidden-sm">
+          <a href="manual.html"><i class="i i-support"></i> <span class="hidden-sm hidden-md">Manual do Sistema</span></a>
+        </li>
+        <li class="hidden-sm hidden-md">
+          <a href="#">v1.0.0</a>
+        </li>
+        <li class="hidden-sm">
+          <ul id="rvfs-controllers" class="list-unstyled list-inline list-accessibility padder-h"></ul>
+        </li>
+        <li>
+          <a href="login.html"><span class="hidden-sm">Sair</span> <i class="i i-logout"></i></a>
+        </li>
+      </ul>
+      <!-- MANUAL VERSAO LOGOUT -->
+    </header>
+    <section>
+      <section class="hbox stretch">
+        <aside class="bg-white aside-md hidden-print" id="nav">
+          <section class="vbox">
+            <section class="w-f scrollable">
+              <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                <div class="clearfix wrapper dk nav-user hidden-xs">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <figure class="thumb avatar pull-left m-r">
+                        <img src="images/profile/a0.png" Pauloclass="dker">
+                        <i class="on md b-black"></i>
+                      </figure>
+                      <span class="hidden-nav-xs clear">
+                        <span class="block m-t-xs">
+                          <strong class="text-lt">Dr Julio</strong> <i class="fa fa-caret-down"></i>
+                        </span>
+                        <span class="text-muted text-xs block">Diretor Geral</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeIn m-t-xs">
+                      <li>
+                        <span class="arrow top hidden-nav-xs"></span>
+                      </li>
+                      <li>
+                        <a href="#">Perfil</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge bg-danger pull-right">3</span>
+                          Notificações
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#">Configurações</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- MENU -->
+                <nav class="nav-primary hidden-xs">
+                  <div class="text-muted text-sm hidden-nav-xs padder-h m-t-sm m-b-sm">MENU</div>
+                  <ul class="nav nav-main" data-ride="collapse">
+                    <li>
+                      <a href="#" class="auto">
+                        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text-inactive"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+                        <i class="i i-stack icon"></i>
+                        <strong>Atendimentos</strong>
+                      </a>
+                      <ul class="nav dk">
+                        <li>
+                          <a href="introducao.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="requisitos-usabilidade.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="padrao-interface.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="navegabilidade.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="funcionalidade-tela.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="acessibilidade.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="padroes-construcao.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="restricoes.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mobile.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="relatorio-incidentes.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="active">
+                      <a href="#" class="auto">
+                        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text-inactive"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+                        <b class="badge bg-danger pull-right">19</b>
+                        <i class="i i-docs icon"></i>
+                        <strong>Triagem</strong>
+                      </a>
+                      <ul class="nav dk">
+                        <li class="active">
+                          <a href="painel.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="cadastro-basico.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-abas.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-modal.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-wizard.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="alterar-basico.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="alterar-abas.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="alterar-modal.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="alterar-wizard.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="filho-basico.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="filho-abas.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="filho-wizard.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="visualizar.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="crud.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="crud-ordenacao.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="relatorio.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="cadastro-perfil.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-perfil-arvore.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="resultado-pesquisa.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="pesquisa-avancada.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="404.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="bloqueio-tela.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                    </li>
+                    <li>
+                      <a href="#" class="auto">
+                          <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                          </span>
+                          <i class="i i-lab icon"></i>
+                          <strong>Ermegência</strong>
+                      </a>
+                      <ul class="nav dk">
+                        <li>
+                          <a href="tipografia.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Sub Menu</span>
+                        </a>
+                        </li>
+                        <li>
+                          <a href="botoes.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="paineis.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="utilitarios.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mensagens.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="icones.html" class="auto">
+                              <b class="badge bg-info pull-right">369</b>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="grid.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="widgets.html" class="auto">
+                              <b class="badge bg-dark pull-right">14</b>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="componentes.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="grupo-lista.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                              <span class="pull-right text-muted">
+                                  <i class="i i-circle-sm-o text-inactive"></i>
+                                  <i class="i i-circle-sm text-active"></i>
+                              </span>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="tabela-estatica.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="tabela-dinamica.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                              <span class="pull-right text-muted">
+                                  <i class="i i-circle-sm-o text-inactive"></i>
+                                  <i class="i i-circle-sm text-active"></i>
+                              </span>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="formulario-elementos.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="formulario-validacao.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="formulario-wizard.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="grafico.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="portlet.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="linha-tempo.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="plugins.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul>
+                  <div class="line dk hidden-nav-xs"></div>
+                  <div class="text-muted text-xs hidden-nav-xs padder-h m-t-sm m-b-sm">
+                    Acesso Rápido
+                    <div class="pull-right">
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Itens mais acessados"><i class="fa fa-question-circle-circle"></i></a>
+                    </div>
+                  </div>
+                  <ul class="nav">
+                    <li>
+                      <a href="requisitos-usabilidade.html">
+                          <i class="i i-circle-sm text-info-dk"></i>
+                          <span>Item Menu</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="padrao-interface.html">
+                          <i class="i i-circle-sm text-success-dk"></i>
+                          <span>Item Menu</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="funcionalidade-tela.html">
+                          <i class="i i-circle-sm text-danger-dk"></i>
+                          <span>Item Menu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </section>
+            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+              <a href="login.html" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs" data-toggle="tooltip"
+                title="Sair">
+                  <i class="i i-logout"></i>
+              </a>
+              <a href="#nav" data-toggle-class="nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+                  <i class="i i-circleleft text-inactive"></i>
+                  <i class="i i-circleright text-active"></i>
+              </a>
+            </footer>
+          </section>
+        </aside>
+        <section id="content">
+          <section class="hbox stretch">
+            <section>
+              <section class="vbox">
+                <section class="scrollable">
+                  <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                    <div class="row m-b-md">
+                      <div class="col-sm-6">
+                        <h1 class="m-b-xs text-black">EASYDOC atendimento médico fácil</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="panel b-a m-n">
+                              <div class="row m-n">
+                                <div class="col-md-6 b-b b-r no-padder">
+                                  <a href="#" class="block padder hover">
+                                    <span class="i-s i-s-2x pull-left m-r-sm">
+                                      <i class="i i-hexagon2 i-s-base text-danger hover-rotate"></i>
+                                      <i class="i i-plus2 i-1x text-white"></i>
+                                    </span>
+                                    <div class="clear">
+                                      <span class="h3 block m-t-sm m-b-none text-danger">120</span>
+                                      <small class="text-muted text-u-c">Usuários On-line</small>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-6 b-b no-padder">
+                                  <a href="#" class="block padder hover">
+                                    <span class="i-s i-s-2x pull-left m-r-sm">
+                                      <i class="i i-hexagon2 i-s-base text-success-lt hover-rotate"></i>
+                                      <i class="i i-users2 i-sm text-white"></i>
+                                    </span>
+                                    <div class="clear">
+                                      <span class="h3 block m-t-sm m-b-none text-success">75%</span>
+                                      <small class="text-muted text-u-c">Processamento</small>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-6 b-r no-padder">
+                                  <a href="#" class="block padder hover">
+                                    <span class="i-s i-s-2x pull-left m-r-sm">
+                                      <i class="i i-hexagon2 i-s-base text-info hover-rotate"></i>
+                                      <i class="i i-stats i-sm text-white"></i>
+                                    </span>
+                                    <div class="clear">
+                                      <span class="h3 block m-t-sm m-b-none text-info">12</span>
+                                      <small class="text-muted text-u-c">Relatórios</small>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-6 no-padder">
+                                  <a href="#" class="block padder hover">
+                                    <span class="i-s i-s-2x pull-left m-r-sm">
+                                      <i class="i i-hexagon2 i-s-base text-primary hover-rotate"></i>
+                                      <i class="i i-alarm i-sm text-white"></i>
+                                    </span>
+                                    <div class="clear">
+                                      <span class="h3 block m-t-sm m-b-none text-primary">9:30</span>
+                                      <small class="text-muted text-u-c">Próxima reunião</small>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="panel b-a">
+                              <header class="panel-heading no-border bg-warning lt text-center">
+                                <a href="#">
+                                    <i class="i i-graph i-3x m-t m-b text-white"></i>
+                                </a>
+                              </header>
+                              <div class="padder-v text-center clearfix">
+                                <div class="col-xs-6 b-r">
+                                  <span class="h3 block m-t-xs m-b-none"><strong>1.202</strong></span>
+                                  <small class="text-muted">Registros</small>
+                                </div>
+                                <div class="col-xs-6">
+                                  <span class="h3 block m-t-xs m-b-none"><strong>230</strong></span>
+                                  <small class="text-muted">Horas</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="panel b-a m-n">
+                              <header class="panel-heading no-border bg-danger lter text-center">
+                                <a href="#">
+                                  <i class="i i-stack i-3x m-t m-b text-white"></i>
+                                </a>
+                              </header>
+                              <div class="padder-v text-center clearfix">
+                                <div class="col-xs-6 b-r">
+                                  <span class="h3 block m-t-xs m-b-none"><strong>983</strong></span>
+                                  <small class="text-muted">Processos</small>
+                                </div>
+                                <div class="col-xs-6">
+                                  <span class="h3 block m-t-xs m-b-none"><strong>31</strong></span>
+                                  <small class="text-muted">Pessoas</small>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row bg-light dk m-b">
+                          <div class="col-md-6 dker clearfix">
+                            <section>
+                              <header>
+                                <div class="pull-right">
+                                  <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-sm btn-rounded btn-default dropdown-toggle">
+                                        <span class="dropdown-label">Semana</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-select">
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[statistics]" value="1">Mês</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[statistics]" value="2" checked>Semana</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[statistics]" value="3">Dia</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <a href="#" class="btn btn-default btn-icon btn-rounded btn-sm">Ir</a>
+                                </div>
+                                <h4>Estatísticas</h4>
+                              </header>
+                              <article class="panel-body">
+                                <div id="flot-sp1ine" style="height: 210px;"></div>
+                              </article>
+                              <footer>
+                                <div class="row text-center no-gutter">
+                                  <div class="col-xs-3">
+                                    <h4 class="m-b-none"><strong>5.860</strong></h4>
+                                    <small class="text-muted m-b block">Usuários</small>
+                                  </div>
+                                  <div class="col-xs-3">
+                                    <h4 class="m-b-none"><strong>10.450</strong></h4>
+                                    <small class="text-muted m-b block">Chamados</small>
+                                  </div>
+                                  <div class="col-xs-3">
+                                    <h4 class="m-b-none"><strong>21.230</strong></h4>
+                                    <small class="text-muted m-b block">Relatórios</small>
+                                  </div>
+                                  <div class="col-xs-3">
+                                    <h4 class="m-b-none"><strong>58</strong></h4>
+                                    <small class="text-muted m-b block">Projetos</small>
+                                  </div>
+                                </div>
+                              </footer>
+                            </section>
+                          </div>
+                          <div class="col-md-6">
+                            <section>
+                              <header>
+                                <div class="pull-right">
+                                  <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-sm btn-rounded btn-default dropdown-toggle">
+                                        <span class="dropdown-label">Últimas 24 horas</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-select">
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="1">Hoje</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="2">Ontem</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="3" checked>Últimas 24 horas</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="4">Últimos 7 dias</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="5">Últimos 30 dias</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="6">Mês passado</a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><input type="radio" name="radio[analysis]" value="7">Todos os tempos</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <h4>Análise</h4>
+                              </header>
+                              <article class="panel-body flot-legend">
+                                <div id="flot-pie-donut" style="height: 240px;"></div>
+                              </article>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <section class="panel b-a m-n">
+                              <header class="panel-heading b-b">
+                                <h2 class="panel-title h5">Projetos</h2>
+                              </header>
+                              <article class="panel-body">
+                                <p>Ab, veritatis, iure, obcaecati tenetur vitae at omnis quae odio eos porro assumenda voluptatem
+                                  deserunt quibusdam inventore magni a aliquid asperiores veniam.</p>
+                                <ul class="list-unstyled list-inline">
+                                  <li>
+                                    <a href="#" class="avatar thumb-sm">
+                                      <img src="images/profile/a0.png" alt="Paulo">
+                                      <i class="on b-white"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="avatar thumb-sm">
+                                      <img src="images/profile/a0.png" alt="André Neves">
+                                      <i class="busy b-white"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="avatar thumb-sm">
+                                      <img src="images/profile/a0.png" alt="Hudson Neves">
+                                      <i class="away b-white"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="avatar thumb-sm">
+                                      <img src="images/profile/a0.png" alt="Gabriel Cavalcante">
+                                      <i class="off b-white"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="btn btn-info btn-rounded"><strong>+10</strong></a>
+                                  </li>
+                                </ul>
+                                <p>
+                                  <small>Início do projeto em março de 2014</small>
+                                </p>
+                                <a href="#" class="btn btn-default btn-sm btn-rounded m-b-xs"><i class="fa fa-eye"></i> Visualizar Documentação</a>
+                              </article>
+                              <footer class="panel-footer">
+                                <small class="text-muted pull-right">5m atrás</small>
+                                <a href="#">
+                                  <figure class="thumb-sm pull-left m-r">
+                                    <img src="images/profile/a0.png" alt="Paulo" class="img-circle">
+                                  </figure>
+                                  <article>
+                                    <h5 class="no-margin">Dr Julio Flores</h5>
+                                    <small class="block text-muted">Diretor Geral</small>
+                                  </article>
+                                </a>
+                              </footer>
+                            </section>
+                          </div>
+                          <div class="col-md-4">
+                            <section class="panel b-a m-n">
+                              <header class="panel-heading b-b">
+                                <h2 class="panel-title h5">
+                                  <span class="label bg-success">Novo</span> Mensagens
+                                  <span class="badge bg-warning pull-right">4</span>
+                                </h2>
+                              </header>
+                              <article>
+                                <ul class="list-group list-group-lg m-b-none no-bg auto">
+                                  <li class="list-group-item">
+                                    <a href="#">
+                                      <figure class="pull-left thumb-sm avatar m-r">
+                                        <img src="images/profile/a0.png" alt="Daiane Oliveira">
+                                        <i class="on b-white bottom"></i>
+                                      </figure>
+                                      <article>
+                                        <h5 class="no-margin">Daiane Oliveira</h5>
+                                        <small class="text-muted text-ellipsis">Nobis, consectetur, veniam cum neque vitae delectus?</small>
+                                      </article>
+                                    </a>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <a href="#">
+                                      <figure class="pull-left thumb-sm avatar m-r">
+                                        <img src="images/profile/a0.png" alt="Isaias Garcia">
+                                        <i class="on b-white bottom"></i>
+                                      </figure>
+                                      <article>
+                                        <h5 class="no-margin">Isaias Garcia</h5>
+                                        <small class="text-muted text-ellipsis">Nam, facilis, perferendis animi nulla ducimus porro. Qui, vero molestias delectus reiciendis.</small>
+                                      </article>
+                                    </a>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <a href="#">
+                                      <figure class="pull-left thumb-sm avatar m-r">
+                                        <img src="images/profile/a0.png" alt="Gabriel Cavalcante">
+                                        <i class="busy b-white bottom"></i>
+                                      </figure>
+                                      <article>
+                                        <h5 class="no-margin">Gabriel Cavalcante</h5>
+                                        <small class="text-muted text-ellipsis">Beatae, unde, voluptates vel neque quidem assumenda.</small>
+                                      </article>
+                                    </a>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <a href="#">
+                                      <figure class="pull-left thumb-sm avatar m-r">
+                                        <img src="images/profile/a0.png" alt="André Neves">
+                                        <i class="away b-white bottom"></i>
+                                      </figure>
+                                      <article>
+                                        <h5 class="no-margin">André Neves</h5>
+                                        <small class="text-muted text-ellipsis">Quibusdam, reprehenderit modi nam ipsa cupiditate nemo.</small>
+                                      </article>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </article>
+                              <footer class="panel-footer">
+                                <div class="input-group">
+                                  <input type="text" class="form-control input-sm btn-rounded" placeholder="Buscar mensagens anteriores...">
+                                  <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-default btn-sm btn-rounded"><i class="fa fa-search"></i></button>
+                                  </span>
+                                </div>
+                              </footer>
+                            </section>
+                          </div>
+                          <div class="col-md-4">
+                            <section class="panel b-a m-n">
+                              <header class="panel-heading b-b">
+                                <h2 class="panel-title h5">Calendário</h2>
+                              </header>
+                              <article class="panel-body no-padder">
+                                <div class="bg-light dker m-l-n-xxs m-r-n-xxs calendar" data-url="data/calendar.json"></div>
+                              </article>
+                              <footer>
+                                <ul class="list-group m-b-none">
+                                  <li class="list-group-item">
+                                    <a href="#" class="text-ellipsis">
+                                      <span class="badge bg-warning">7:30</span>
+                                      Reunião com a gerencia
+                                    </a>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <a href="#" class="text-ellipsis">
+                                      <span class="badge bg-success">9:30</span>
+                                      Treinamento agendado sobre novas tecnologias
+                                    </a>
+                                  </li>
+                                </ul>
+                              </footer>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle-class="nav-off-screen" data-target="#nav"></a>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <div class="loading">
+    <div class="message">
+      <div class="text-center">
+        <div class="block m-b">
+          <i class="fa fa-spinner fa-5x fa-spin"></i>
+        </div>
+        <h3>Carregando...</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/vendor.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      // e.src='//www.google-analytics.com/analytics.js';
+      // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      // ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <script src="scripts/ie.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/demo.js"></script>
+</body>
+</html>

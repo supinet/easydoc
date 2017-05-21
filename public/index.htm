@@ -1,0 +1,668 @@
+<!doctype html>
+<html class="app no-js" lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EASYDOC - Sistema de Atendimento Médico Fácil</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="description" content="Sistema de gerenciamento de atendimento fácil para médicos.">
+  <meta name="keywords" content="paciente, gerenciamento, médicos, saúde, atendimento, gestão, hospital">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>  
+  <section class="vbox">
+    <header class="bg-primary header header-md navbar navbar-fixed-top-xs box-shadow">
+      <div class="navbar-header aside-md bg-white">
+        <a class="btn btn-link visible-xs" data-toggle-class="nav-off-screen" data-target="#nav">
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- LOGO -->
+        <a href="painel.html" class="navbar-brand text-center">
+          <figure class="inline m-r-xs">
+            <img src="images/logo.png" alt="EASYDOC">
+          </figure>
+        </a>
+        <!-- LOGO -->
+        <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+        <i class="fa fa-cog"></i>
+      </a>
+      </div>
+      <ul class="nav navbar-nav hidden-xs">
+        <!-- NOME SISTEMA PERFIL USUARIO -->
+        <li>
+          <a href="#"><i class="i i-book"></i> EASYDOC - Perfil Diretor Geral</a>
+        </li>
+        <!-- NOME SISTEMA PERFIL USUARIO -->
+      </ul>
+      <!-- MANUAL VERSAO LOGOUT -->
+      <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+        <li>
+          <a href="login.html"><span class="hidden-sm">Sair</span> <i class="i i-logout"></i></a>
+        </li>
+      </ul>
+      <!-- MANUAL VERSAO LOGOUT -->
+    </header>
+    <section>
+      <section class="hbox stretch">
+        <aside class="bg-white aside-md hidden-print" id="nav">
+          <section class="vbox">
+            <section class="w-f scrollable">
+              <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                <div class="clearfix wrapper dk nav-user hidden-xs">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <figure class="thumb avatar pull-left m-r">
+                        <img src="images/profile/a0.png" Pauloclass="dker">
+                        <i class="on md b-black"></i>
+                      </figure>
+                      <span class="hidden-nav-xs clear">
+                        <span class="block m-t-xs">
+                          <strong class="text-lt">Dr Julio</strong> <i class="fa fa-caret-down"></i>
+                        </span>
+                        <span class="text-muted text-xs block">Diretor Geral</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeIn m-t-xs">
+                      <li>
+                        <span class="arrow top hidden-nav-xs"></span>
+                      </li>
+                      <li>
+                        <a href="#">Perfil</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge bg-danger pull-right">3</span>
+                          Notificações
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#">Configurações</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- MENU -->
+                <nav class="nav-primary hidden-xs">
+                  <div class="text-muted text-sm hidden-nav-xs padder-h m-t-sm m-b-sm">MENU</div>
+                  <ul class="nav nav-main" data-ride="collapse">
+                    <li>
+                      <a href="#" class="auto">
+                        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text-inactive"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+                        <i class="i i-user2 icon"></i>
+                        <strong>Atendimentos</strong>
+                      </a>
+                      <ul class="nav dk">
+                        <li>
+                          <a href="introducao.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="requisitos-usabilidade.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="padrao-interface.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="navegabilidade.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="funcionalidade-tela.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="acessibilidade.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="padroes-construcao.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="restricoes.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mobile.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="relatorio-incidentes.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="active">
+                      <a href="#" class="auto">
+                        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text-inactive"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+                        <b class="badge bg-danger pull-right">19</b>
+                        <i class="i i-eye2 icon"></i>
+                        <strong>Triagem</strong>
+                      </a>
+                      <ul class="nav dk">
+                        <li class="active">
+                          <a href="painel.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="cadastro-basico.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-abas.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-modal.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-wizard.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="alterar-basico.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="alterar-abas.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="alterar-modal.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="alterar-wizard.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="filho-basico.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="filho-abas.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="filho-wizard.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="visualizar.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="crud.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="crud-ordenacao.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="relatorio.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="cadastro-perfil.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="cadastro-perfil-arvore.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="resultado-pesquisa.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="pesquisa-avancada.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                            <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                            </span>
+                            <i class="i i-dot"></i>
+                            <span>Item Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="404.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="bloqueio-tela.html" class="auto">
+                                <i class="i i-dot"></i>
+                                <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                    </li>
+                    <li>
+                      <a href="#" class="auto">
+                          <span class="pull-right text-muted">
+                              <i class="i i-circle-sm-o text-inactive"></i>
+                              <i class="i i-circle-sm text-active"></i>
+                          </span>
+                          <i class="i i-heart2 icon"></i>
+                          <strong>Ermegência</strong>
+                      </a>
+                      <ul class="nav dk">
+                        <li>
+                          <a href="tipografia.html" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>Item Sub Menu</span>
+                        </a>
+                        </li>
+                        <li>
+                          <a href="botoes.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="paineis.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="utilitarios.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mensagens.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="icones.html" class="auto">
+                              <b class="badge bg-info pull-right">369</b>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="grid.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="widgets.html" class="auto">
+                              <b class="badge bg-dark pull-right">14</b>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="componentes.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="grupo-lista.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                              <span class="pull-right text-muted">
+                                  <i class="i i-circle-sm-o text-inactive"></i>
+                                  <i class="i i-circle-sm text-active"></i>
+                              </span>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="tabela-estatica.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="tabela-dinamica.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="auto">
+                              <span class="pull-right text-muted">
+                                  <i class="i i-circle-sm-o text-inactive"></i>
+                                  <i class="i i-circle-sm text-active"></i>
+                              </span>
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                          <ul class="nav dker">
+                            <li>
+                              <a href="formulario-elementos.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="formulario-validacao.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="formulario-wizard.html">
+                                  <i class="i i-dot"></i>
+                                  <span>Item Sub Menu</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="grafico.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="portlet.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="linha-tempo.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="plugins.html" class="auto">
+                              <i class="i i-dot"></i>
+                              <span>Item Sub Menu</span>
+                          </a>
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul>
+                  <div class="line dk hidden-nav-xs"></div>
+                  <div class="text-muted text-xs hidden-nav-xs padder-h m-t-sm m-b-sm">
+                    Acesso Rápido
+                    <div class="pull-right">
+                      <a href="#" data-toggle="tooltip" data-placement="top" title="Itens mais acessados"><i class="fa fa-question-circle-circle"></i></a>
+                    </div>
+                  </div>
+                  <ul class="nav">
+                    <li>
+                      <a href="requisitos-usabilidade.html">
+                          <i class="i i-circle-sm text-info-dk"></i>
+                          <span>Item Menu</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="padrao-interface.html">
+                          <i class="i i-circle-sm text-success-dk"></i>
+                          <span>Item Menu</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="funcionalidade-tela.html">
+                          <i class="i i-circle-sm text-danger-dk"></i>
+                          <span>Item Menu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </section>
+            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+              <a href="login.html" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs" data-toggle="tooltip"
+                title="Logout">
+                  <i class="i i-logout"></i>
+              </a>
+              <a href="#nav" data-toggle-class="nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+                  <i class="i i-circleleft text-inactive"></i>
+                  <i class="i i-circleright text-active"></i>
+              </a>
+            </footer>
+          </section>
+        </aside>
+        <section id="content">
+          <section class="hbox stretch">
+            <section>
+              <section class="vbox">
+                <section class="scrollable">
+                  <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                    <div class="row m-b-md">
+                      <div class="col-sm-6">
+                        <h1 class="m-b-xs text-black">EASYDOC atendimento médico fácil</h1>
+
+                        <div class="py-5 section text-center">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h1 class="text-primary">ESCOLHA UM NÍVEL DE ANTEÇÃO</h1>
+                                <p class="lead">por favor escolha o nível de anteção</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="py-5 section">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <h2 class="text-sm-center text-primary">PRIMÁRIO</h2>
+                                <p class="text-justify my-1">Atendimento preventivo. Pouca Gravidade. Exames de rotina, pré-natal, orientação médica, dor não específica, algo que o paciente não sabe informar corretamente mas deseja ser atendido por um médico.</p>
+                              </div>
+                              <div class="col-md-4">
+                                <h2 class="text-sm-center text-primary">SECUNDÁRIO</h2>
+                                <p class="text-justify my-1">Atendimento de tratamento.&nbsp;Média Gravidade. Aplicacões de algum tipo de medicamento específico que deve ser feito por um especialista, algum tipo de cirurgia simples.</p>
+                              </div>
+                              <div class="col-md-4">
+                                <h2 class="text-sm-center text-primary">TERCIÁRIO</h2>
+                                <p class="text-justify my-1">Atendimento cirurgico complexo. Alta gravidade. Geralmente o paciente está em estado de ermegência e necessita de atendimento imediato.</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <a href="#" class="btn btn-primary">Selecionar</a>
+                              </div>
+                              <div class="col-md-4">
+                                <a href="#" class="btn btn-primary">Selecionar</a>
+                              </div>
+                              <div class="col-md-4">
+                                <a href="#" class="btn btn-primary">Selecionar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle-class="nav-off-screen" data-target="#nav"></a>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <div class="loading">
+    <div class="message">
+      <div class="text-center">
+        <div class="block m-b">
+          <i class="fa fa-spinner fa-5x fa-spin"></i>
+        </div>
+        <h3>Carregando...</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/vendor.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      // e.src='//www.google-analytics.com/analytics.js';
+      // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      // ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <script src="scripts/ie.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/demo.js"></script>
+</body>
+</html>
