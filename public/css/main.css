@@ -9172,7 +9172,7 @@ body.container {
     padding-top: 0px;
 }
 .vbox>header.header-md~section {
-    top: 82px;
+    top: 50px;
 }
 }@media (max-width:991px) {
     #barra-brasil {
