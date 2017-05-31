@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/supinet/easydoc#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "consign": "^0.1.4",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongoose": "^4.10.4"
   }
 }
