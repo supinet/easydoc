@@ -1,47 +1,62 @@
+var mongoose = require('mongoose');
+
 var api = {};
 
-var idPk = 3;
-var atendimentos = [
-    {_id: 1, tipo_atendimento: 'PRIMARIO', retorno: 'NÃO'},
-    {_id: 2, tipo_atendimento: 'PRIMARIO', retorno: 'SIM'},
-    {_id: 3, tipo_atendimento: 'PRIMARIO', retorno: 'NÃO'}
-];
- 
+var model = mongoose.model('Atendimento');
+
 api.lista = function(req, res) {
-    res.json(atendimentos);
+    model
+        .find({})
+        .then(function(atendimentos) {
+            res.json(atendimentos);
+        }, function(error) {
+            console.log(error);
+            res.status(500).json(error);
+        });
 };
 
 api.buscaPorId = function(req, res) {
-    var atendimento = atendimentos.find(function(atendimento) {
-        return atendimento._id == req.params.id;
-    });
-    res.json(atendimento);
+    model
+        .findById(req.params.id)
+        .then(function(atendimento) {
+            if(!atendimento) throw Error('Atendimento não encontrado');
+            res.json(atendimento);
+        }, function(error) {
+            res.status(404).json(error);
+        })
 };
 
 api.removePorId = function(req, res) {
-    atendimento = atendimentos.filter(function(atendimento){
-        return atendimento._id != req.params.id
-    });
-    res.sendStatus(204);
+    model
+        .remove({_id: req.params.id})
+        .then(function() {
+            res.sendStatus(204);
+        }, function(error) {
+            res.status(500).json(error);
+        });
 };
 
 api.adiciona = function(req, res) {
-    var atendimento = req.body;
-    atendimento._id = ++idPk;
-    atendimentos.push(atendimento);
-    res.json(atendimento);
+
+    model
+        .create(req.body)
+        .then(function(atendimento){
+            res.json(atendimento);
+        }, function(error) {
+            console.log(error);
+            res.status(500).json(error);
+        });
 };
 
 api.atualiza = function(req, res) {
-    atendimento = req.body;
-    var atendimentoId = req.params.id;
-    var indice = atendimentos.findIndex(function(atendimento){
-        return atendimento._id == atendimentoId;
-    });
-
-    atendimentos[indice] = atendimento;
-
-    res.sendStatus(200);
+    model
+        .findByIdAndUpdate(req.params.id, req.body)
+        .then(function(atendimento) {
+            res.json(atendimento);
+        }, function(error) {
+            console.log(error);
+            res.status(500).json(error);
+        });
 };
 
 module.exports = api;

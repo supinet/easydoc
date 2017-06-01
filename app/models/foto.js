@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var schema = mongoose.Schema({
-    tipo: {
+    tipo_atendimento: {
         type: String,
         required: true
     },
